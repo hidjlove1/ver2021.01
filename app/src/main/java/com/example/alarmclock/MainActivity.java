@@ -1,83 +1,75 @@
 package com.example.alarmclock;
 
-import androidx.appcompat.app.AppCompatActivity;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.AlarmClock;
+import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity implements OnClickListener {
+    Button btnSetAlarm;
+ //   EditText etHour, etMinute;
+    int minute, hour;
+    Calendar cal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        btnSetAlarm = (Button) findViewById(R.id.Button_21);
+      //  etHour = (EditText) findViewById(R.id.etHour);
+       // etMinute = (EditText) findViewById(R.id.etMinute);
+        btnSetAlarm.setOnClickListener(this);
 
     }
 
-    public void createAlarm(View view) {
-        //This creates an ArrayList called alarmDays which is passed into the .EXTRA_DAYS method
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.main_activity, menu);
+//        return true;
+//    }
 
-        ArrayList<Integer> alarmDays = new ArrayList<>();
-
-        //This sets Monday as one of the alarm days
-
-        alarmDays.add(2);
-
-        //This sets Tuesday as one of the alarm days
-
-        alarmDays.add(3);
-
-        //This sets Wednesday as one of the alarm days
-
-        alarmDays.add(4);
-
-        //How to set up a new Alarm intent
-
-        Intent intent = new Intent(AlarmClock.ACTION_SET_ALARM)
-
-                //This sets which days the alarm goes off on using the ArrayList above
-
-                .putExtra(AlarmClock.EXTRA_DAYS, alarmDays)
-
-                //This sets the name or message of the alarm
-
-                .putExtra(AlarmClock.EXTRA_MESSAGE, "Wake up!")
-
-                //This sets the hour of the alarm (24 hour) to 7am
-
-                .putExtra(AlarmClock.EXTRA_HOUR, 7)
-
-                // This sets the minutes of the alarm to 30
-
-                .putExtra(AlarmClock.EXTRA_MINUTES, 30)
-
-                // This sets the alarm to (false=not) vibrate
-
-                .putExtra(AlarmClock.EXTRA_VIBRATE, false)
-
-                // This is meant to make the alarm be silent but I don't think it works...
-
-                .putExtra(AlarmClock.EXTRA_RINGTONE, "VALUE_RINGTONE_SILENT");
-
-        // To show the Alarm app after adding an alarm, uncomment the line below:
-
-        //intent.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-
-        // This line first checks that your phone has an app that can handle the intent before
-
-        // starting so the app doesn't crash if your phone doesn't an an appropriate app
-
-        if (intent.resolveActivity(getPackageManager()) != null) {
-
-            startActivity(intent);
-
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.Button_21:
+                set21dia();
+                break;
         }
-
     }
+
+    private void set21dia() {
+//        cal = new GregorianCalendar();
+//        cal.setTimeInMillis(System.currentTimeMillis());
+//        day = cal.get(Calendar.DAY_OF_WEEK);
+//        hour = cal.get(Calendar.HOUR_OF_DAY);
+//        minute = cal.get(Calendar.MINUTE);
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 6);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 26);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        startActivity(i);
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 48);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        startActivity(j);
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 11);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 9);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        startActivity(k);
+    }
+
 
 }
