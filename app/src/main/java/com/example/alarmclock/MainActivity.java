@@ -46,9 +46,11 @@ public class MainActivity extends Activity implements OnClickListener {
                 set21dia();
                 break;
 
+
             case R.id.Button_22:
                 set22dia();
                 break;
+
         }
     }
 
