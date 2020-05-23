@@ -16,14 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="현재시각: "
-                android:textSize="20sp"
+                android:textSize="30sp"
                 tools:layout_editor_absoluteX="23dp"
                 tools:layout_editor_absoluteY="19dp" />
 
@@ -32,9 +34,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="00:00"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 tools:layout_editor_absoluteX="120dp"
-                tools:layout_editor_absoluteY="19dp" />
+                tools:layout_editor_absoluteY="30dp" />
 
         </LinearLayout>
 
@@ -423,19 +425,31 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="DIA:"
+                android:textSize="18dp"
+                android:text="One Click:"
                 android:layout_marginRight="5dp"
+
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="사업 시각(string)"
+                android:textSize="18dp"
+                android:text="호포승무사업소 주간 DIA 알람 앱"
+                android:textColor="@color/colorPrimaryDark"
                 />
 
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="made by 정억"
+            android:layout_gravity="right"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            />
 
 
     </LinearLayout>
