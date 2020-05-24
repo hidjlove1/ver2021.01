@@ -996,7 +996,7 @@ public class MainActivity extends Activity implements OnClickListener {
         m.putExtra(AlarmClock.EXTRA_HOUR, 17);
         m.putExtra(AlarmClock.EXTRA_MINUTES, 39);
         m.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        m.putExtra(AlarmClock.EXTRA_MESSAGE, "34Dia 네번째 사업");
+        m.putExtra(AlarmClock.EXTRA_MESSAGE, "34Dia 다섯번째 사업");
         m.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(m);
     }
