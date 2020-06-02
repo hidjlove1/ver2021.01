@@ -7,7 +7,6 @@ import java.util.GregorianCalendar;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.view.Menu;
@@ -18,7 +17,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class MainActivity extends Activity implements OnClickListener {
+public class SaturdayActivity extends Activity implements OnClickListener {
     Button btnSetAlarm21;
     Button btnSetAlarm22;
     Button btnSetAlarm23;
@@ -60,12 +59,6 @@ public class MainActivity extends Activity implements OnClickListener {
     Button btnSetAlarm59;
     Button btnSetAlarm60;
     Button btnSetAlarm61;
-    Button btnSetSaturday;
-    Button btnSetSunday;
-    Button btnSetHopo;
-    Button btnSetKwangan;
-    Button btnSetKwanje;
-
 
 
 
@@ -79,11 +72,12 @@ public class MainActivity extends Activity implements OnClickListener {
     String formatData = sdfNow.format(date);
     TextView TextView_now;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_saturday);
+        //Intent intent = new Intent(this.getIntent());
+
 
         btnSetAlarm21 = (Button) findViewById(R.id.Button_21);
         btnSetAlarm22 = (Button) findViewById(R.id.Button_22);
@@ -126,13 +120,6 @@ public class MainActivity extends Activity implements OnClickListener {
         btnSetAlarm59 = (Button) findViewById(R.id.Button_59);
         btnSetAlarm60 = (Button) findViewById(R.id.Button_60);
         btnSetAlarm61 = (Button) findViewById(R.id.Button_61);
-        btnSetSaturday = (Button) findViewById(R.id.btn_saturday);
-        btnSetSunday = (Button) findViewById(R.id.btn_sunday);
-        btnSetHopo = (Button) findViewById(R.id.Button_hopo);
-        btnSetKwangan = (Button) findViewById(R.id.Button_kwangan);
-        btnSetKwanje = (Button) findViewById(R.id.Button_kwanje);
-
-
 
 
 
@@ -177,11 +164,7 @@ public class MainActivity extends Activity implements OnClickListener {
         btnSetAlarm59.setOnClickListener(this);
         btnSetAlarm60.setOnClickListener(this);
         btnSetAlarm61.setOnClickListener(this);
-        btnSetSaturday.setOnClickListener(this);
-        btnSetSunday.setOnClickListener(this);
-        btnSetHopo.setOnClickListener(this);
-        btnSetKwangan.setOnClickListener(this);
-        btnSetKwanje.setOnClickListener(this);
+
 
 
 
@@ -358,26 +341,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
             case R.id.Button_61:
                 set61dia();
-                break;
-
-            case R.id.btn_saturday:
-                setSaturday();
-                break;
-
-            case R.id.btn_sunday:
-                setSunday();
-                break;
-
-            case R.id.Button_hopo:
-                setHopo();
-                break;
-
-            case R.id.Button_kwangan:
-                setKwangan();
-                break;
-
-            case R.id.Button_kwanje:
-                setKwanje();
                 break;
 
 
@@ -2182,32 +2145,5 @@ public class MainActivity extends Activity implements OnClickListener {
 
     }
 
-    private void setSaturday() {
-
-        Intent intentSat = new Intent(MainActivity.this, SaturdayActivity.class);
-        startActivity(intentSat);
-    }
-
-    private void setSunday() {
-        Intent intentSun = new Intent(MainActivity.this, SundayActivity.class);
-        startActivity(intentSun);
-    }
-
-
-    private  void setHopo() {
-        startActivity(new Intent("android.intent.action.DIAL",Uri.parse("tel:0553700164")));
-
-
-    }
-
-    private  void setKwangan() {
-        startActivity(new Intent("android.intent.action.DIAL",Uri.parse("tel:0516407641")));
-
-    }
-
-    private  void setKwanje() {
-        startActivity(new Intent("android.intent.action.DIAL",Uri.parse("tel:0516407112")));
-
-    }
 
 }
