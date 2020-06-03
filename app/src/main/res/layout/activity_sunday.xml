@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="5dp">
 
 
             <TextView
@@ -422,7 +422,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -434,7 +434,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:text="호포승무사업소 휴일 주간 DIA 알람 앱"
                 android:textColor="@color/colorPrimaryDark"
                 />
@@ -446,7 +446,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:text="--- 다수의 알람이 설정되는 시간이 필요합니다."
             android:textSize="15dp" />
 
@@ -456,6 +456,43 @@
             android:layout_marginTop="5dp"
             android:text="--- 해당 DIA 버튼 누른 후 4~5초 기다린 후 앱을 종료하세요"
             android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="전화걸기:"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="#ffffff"
+                android:layout_marginRight="2dp" />
+
+            <Button
+                android:id="@+id/Button_hopo"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="호포운용"
+                android:layout_marginRight="2dp" />
+
+            <Button
+                android:id="@+id/Button_kwangan"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="광안운용"
+                android:layout_marginRight="2dp" />
+
+            <Button
+                android:id="@+id/Button_kwanje"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="관제직통"
+                android:layout_marginRight="2dp" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"

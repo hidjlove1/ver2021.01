@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginBottom="10dp">
+            >
 
 
             <TextView
@@ -424,11 +424,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:text="One Click:"
                 android:layout_marginRight="5dp"
 
@@ -448,7 +448,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:text="--- 다수의 알람이 설정되는 시간이 필요합니다."
             android:textSize="15dp" />
 
