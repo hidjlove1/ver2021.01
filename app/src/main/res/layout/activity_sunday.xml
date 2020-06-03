@@ -324,14 +324,12 @@
                 android:id="@+id/Button_54"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="54 DIA"
                 android:layout_marginRight="2dp"/>
 
             <Button
                 android:id="@+id/Button_55"
                 android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:text="55 DIA"/>
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
@@ -345,35 +343,30 @@
                 android:id="@+id/Button_56"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="56 DIA"
                 android:layout_marginRight="2dp"/>
 
             <Button
                 android:id="@+id/Button_57"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="57 DIA"
                 android:layout_marginRight="2dp"/>
 
             <Button
                 android:id="@+id/Button_58"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="58 DIA"
                 android:layout_marginRight="2dp"/>
 
             <Button
                 android:id="@+id/Button_59"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="59 DIA"
                 android:layout_marginRight="2dp"/>
 
             <Button
                 android:id="@+id/Button_60"
                 android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:text="60 DIA"/>
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
@@ -387,7 +380,6 @@
                 android:id="@+id/Button_61"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="61 DIA"
                 android:layout_marginRight="2dp" />
 
             <Button
@@ -426,7 +418,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:text="One Click:"
                 android:layout_marginRight="5dp"
 
@@ -434,7 +426,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
+                android:textSize="18dp"
                 android:text="호포승무사업소 휴일 주간 DIA 알람 앱"
                 android:textColor="@color/colorPrimaryDark"
                 />

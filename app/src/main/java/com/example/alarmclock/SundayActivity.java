@@ -47,14 +47,6 @@ public class SundayActivity extends Activity implements OnClickListener {
     Button btnSetAlarm51;
     Button btnSetAlarm52;
     Button btnSetAlarm53;
-    Button btnSetAlarm54;
-    Button btnSetAlarm55;
-    Button btnSetAlarm56;
-    Button btnSetAlarm57;
-    Button btnSetAlarm58;
-    Button btnSetAlarm59;
-    Button btnSetAlarm60;
-    Button btnSetAlarm61;
     Button btnSetWeekday;
     Button btnSetSaturday;
 
@@ -113,14 +105,7 @@ public class SundayActivity extends Activity implements OnClickListener {
         btnSetAlarm51 = (Button) findViewById(R.id.Button_51);
         btnSetAlarm52 = (Button) findViewById(R.id.Button_52);
         btnSetAlarm53 = (Button) findViewById(R.id.Button_53);
-        btnSetAlarm54 = (Button) findViewById(R.id.Button_54);
-        btnSetAlarm55 = (Button) findViewById(R.id.Button_55);
-        btnSetAlarm56 = (Button) findViewById(R.id.Button_56);
-        btnSetAlarm57 = (Button) findViewById(R.id.Button_57);
-        btnSetAlarm58 = (Button) findViewById(R.id.Button_58);
-        btnSetAlarm59 = (Button) findViewById(R.id.Button_59);
-        btnSetAlarm60 = (Button) findViewById(R.id.Button_60);
-        btnSetAlarm61 = (Button) findViewById(R.id.Button_61);
+
         btnSetSaturday = (Button) findViewById(R.id.btn_saturday);
         btnSetWeekday = (Button) findViewById(R.id.btn_weekday);
 
@@ -158,14 +143,7 @@ public class SundayActivity extends Activity implements OnClickListener {
         btnSetAlarm51.setOnClickListener(this);
         btnSetAlarm52.setOnClickListener(this);
         btnSetAlarm53.setOnClickListener(this);
-        btnSetAlarm54.setOnClickListener(this);
-        btnSetAlarm55.setOnClickListener(this);
-        btnSetAlarm56.setOnClickListener(this);
-        btnSetAlarm57.setOnClickListener(this);
-        btnSetAlarm58.setOnClickListener(this);
-        btnSetAlarm59.setOnClickListener(this);
-        btnSetAlarm60.setOnClickListener(this);
-        btnSetAlarm61.setOnClickListener(this);
+
         btnSetWeekday.setOnClickListener(this);
         btnSetSaturday.setOnClickListener(this);
 
@@ -315,37 +293,7 @@ public class SundayActivity extends Activity implements OnClickListener {
                 set53dia();
                 break;
 
-            case R.id.Button_54:
-                set54dia();
-                break;
 
-            case R.id.Button_55:
-                set55dia();
-                break;
-
-            case R.id.Button_56:
-                set56dia();
-                break;
-
-            case R.id.Button_57:
-                set57dia();
-                break;
-
-            case R.id.Button_58:
-                set58dia();
-                break;
-
-            case R.id.Button_59:
-                set59dia();
-                break;
-
-            case R.id.Button_60:
-                set60dia();
-                break;
-
-            case R.id.Button_61:
-                set61dia();
-                break;
 
             case R.id.btn_weekday:
                 setWeekday();
@@ -363,159 +311,10 @@ public class SundayActivity extends Activity implements OnClickListener {
 
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 6);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 26);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "21Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 9);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 48);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "21Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 11);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 9);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "21Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set22dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 6);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 58);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "22Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 9);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 15);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "22Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 57);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "22Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 39);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "22Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent m = new Intent(AlarmClock.ACTION_SET_ALARM);
-        m.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        m.putExtra(AlarmClock.EXTRA_MINUTES, 21);
-        m.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        m.putExtra(AlarmClock.EXTRA_MESSAGE, "22Dia 다섯번째 사업");
-        m.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(m);
-
-    }
-
-    private void set23dia() {
-
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 6);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 36);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "23Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 5);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "23Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 49);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "23Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set24dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
         i.putExtra(AlarmClock.EXTRA_HOUR, 7);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 7);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 27);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "24Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 21Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -527,9 +326,9 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
         j.putExtra(AlarmClock.EXTRA_HOUR, 9);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 25);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 35);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "24Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 21Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
@@ -541,9 +340,9 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
         k.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 28);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 38);
         k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "24Dia 세번째 사업");
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 21Dia 세번째 사업");
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
@@ -554,26 +353,24 @@ public class SundayActivity extends Activity implements OnClickListener {
         }
 
         Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 11);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 12);
+        l.putExtra(AlarmClock.EXTRA_HOUR, 12);
+        l.putExtra(AlarmClock.EXTRA_MINUTES, 22);
         l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "24Dia 네번째 사업");
+        l.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 21Dia 네번째 사업");
         l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(l);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    }
 
-        Intent m = new Intent(AlarmClock.ACTION_SET_ALARM);
-        m.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        m.putExtra(AlarmClock.EXTRA_MINUTES, 4);
-        m.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        m.putExtra(AlarmClock.EXTRA_MESSAGE, "24Dia 다섯번째 사업");
-        m.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(m);
+    private void set22dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 34);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 22Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
 
         try {
             Thread.sleep(1000);
@@ -581,13 +378,108 @@ public class SundayActivity extends Activity implements OnClickListener {
             e.printStackTrace();
         }
 
-        Intent n = new Intent(AlarmClock.ACTION_SET_ALARM);
-        n.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        n.putExtra(AlarmClock.EXTRA_MINUTES, 35);
-        n.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        n.putExtra(AlarmClock.EXTRA_MESSAGE, "24Dia 여섯번째 사업");
-        n.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(n);
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 12);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 42);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 22Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+    }
+
+    private void set23dia() {
+
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 41);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 23Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 28);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 23Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 12);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 49);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 23Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+    }
+
+    private void set24dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 55);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 24Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 56);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 24Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 12);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 30);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 24Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
+        l.putExtra(AlarmClock.EXTRA_HOUR, 14);
+        l.putExtra(AlarmClock.EXTRA_MINUTES, 53);
+        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        l.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 24Dia 네번째 사업");
+        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(l);
 
     }
 
@@ -595,10 +487,37 @@ public class SundayActivity extends Activity implements OnClickListener {
 
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 6);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 44);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 2);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "25Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 25Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 13);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 10);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 25Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+    }
+
+    private void set26dia() {
+
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 16);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 26Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -610,9 +529,9 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
         j.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 27);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 17);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "25Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 26Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
@@ -623,23 +542,199 @@ public class SundayActivity extends Activity implements OnClickListener {
         }
 
         Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 50);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 11);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 27);
         k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "25Dia 세번째 사업");
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 26Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
+        l.putExtra(AlarmClock.EXTRA_HOUR, 12);
+        l.putExtra(AlarmClock.EXTRA_MINUTES, 58);
+        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        l.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 26Dia 네번째 사업");
+        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(l);
+
+    }
+
+    private void set27dia() {
+
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 23);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 27Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 11);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 38);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 27Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 14);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 43);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 27Dia 세번째 사업");
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
     }
 
-    private void set26dia() {
+    private void set28dia() {
 
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 16);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 30);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "26Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 28Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 20);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 28Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+    }
+
+    private void set29dia() {
+
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 51);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 29Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 34);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 29Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 15);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 46);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 29Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+    }
+
+    private void set30dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 3);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 30Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 12);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 2);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 30Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 14);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 36);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 30Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
+        l.putExtra(AlarmClock.EXTRA_HOUR, 17);
+        l.putExtra(AlarmClock.EXTRA_MINUTES, 5);
+        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        l.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 30Dia 네번째 사업");
+        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(l);
+
+    }
+
+    private void set31dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 10);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 31Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -653,421 +748,7 @@ public class SundayActivity extends Activity implements OnClickListener {
         j.putExtra(AlarmClock.EXTRA_HOUR, 11);
         j.putExtra(AlarmClock.EXTRA_MINUTES, 0);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "26Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-    }
-
-    private void set27dia() {
-
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 6);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 56);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "27Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 11);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 2);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "27Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 47);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "27Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set28dia() {
-
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 20);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "28Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 11);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 35);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "28Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 14);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "28Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set29dia() {
-
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 25);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "29Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 7);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "29Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-    }
-
-    private void set30dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 29);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "30Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 6);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "30Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 12);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "30Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 15);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "30Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
-    }
-
-    private void set31dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 11);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "31Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 9);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 20);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "31Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 8);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "31Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 1);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "31Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-    }
-
-    private void set32dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 43);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "32Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 41);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "32Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 26);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "32Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 36);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "32Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-    }
-
-    private void set33dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 52);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "33Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 8);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "33Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-    }
-
-    private void set34dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 5);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "34Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 10);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "34Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 13);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "34Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 52);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "34Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent m = new Intent(AlarmClock.ACTION_SET_ALARM);
-        m.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        m.putExtra(AlarmClock.EXTRA_MINUTES, 39);
-        m.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        m.putExtra(AlarmClock.EXTRA_MESSAGE, "34Dia 다섯번째 사업");
-        m.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(m);
-    }
-
-    private void set35dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 7);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 35);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "35Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 41);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "35Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-    }
-
-    private void set36dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 20);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "36Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 13);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "36Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 31Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
@@ -1079,9 +760,9 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
         k.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 8);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 1);
         k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "36Dia 세번째 사업");
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 31Dia 세번째 사업");
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
@@ -1093,21 +774,115 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
         l.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 49);
+        l.putExtra(AlarmClock.EXTRA_MINUTES, 21);
         l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "36Dia 네번째 사업");
+        l.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 31Dia 네번째 사업");
         l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(l);
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent m = new Intent(AlarmClock.ACTION_SET_ALARM);
+        m.putExtra(AlarmClock.EXTRA_HOUR, 15);
+        m.putExtra(AlarmClock.EXTRA_MINUTES, 10);
+        m.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        m.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 31Dia 다섯번째 사업");
+        m.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(m);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent n = new Intent(AlarmClock.ACTION_SET_ALARM);
+        n.putExtra(AlarmClock.EXTRA_HOUR, 16);
+        n.putExtra(AlarmClock.EXTRA_MINUTES, 52);
+        n.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        n.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 31Dia 여섯번째 사업");
+        n.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(n);
     }
 
-    private void set37dia() {
+    private void set32dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 10);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 17);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "37Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 32Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 22);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 32Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 16);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 59);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 32Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+
+    }
+
+    private void set33dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 12);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 33Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 55);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 33Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+    }
+
+    private void set34dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 26);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 34Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -1121,45 +896,19 @@ public class SundayActivity extends Activity implements OnClickListener {
         j.putExtra(AlarmClock.EXTRA_HOUR, 15);
         j.putExtra(AlarmClock.EXTRA_MINUTES, 2);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "37Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 34Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
     }
 
-    private void set38dia() {
+    private void set35dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 9);
         i.putExtra(AlarmClock.EXTRA_MINUTES, 31);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "38Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 58);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "38Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-    }
-
-    private void set39dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 37);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "39Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 35Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -1171,49 +920,9 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
         j.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 57);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 44);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "39Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 23);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "39Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set40dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 43);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "40Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 55);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "40Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 35Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
@@ -1225,21 +934,35 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
         k.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 23);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 49);
         k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "40Dia 세번째 사업");
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 35Dia 세번째 사업");
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
+        l.putExtra(AlarmClock.EXTRA_HOUR, 61);
+        l.putExtra(AlarmClock.EXTRA_MINUTES, 38);
+        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        l.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 35Dia 네번째 사업");
+        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(l);
+
     }
 
-    private void set41dia() {
+    private void set36dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 49);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 45);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "41Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 36Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -1251,9 +974,9 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
         j.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 43);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 26);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "41Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 36Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
@@ -1265,9 +988,9 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
         k.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 39);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 43);
         k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "41Dia 세번째 사업");
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 36Dia 세번째 사업");
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
@@ -1278,10 +1001,10 @@ public class SundayActivity extends Activity implements OnClickListener {
         }
 
         Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 12);
+        l.putExtra(AlarmClock.EXTRA_HOUR, 15);
+        l.putExtra(AlarmClock.EXTRA_MINUTES, 7);
         l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "41Dia 네번째 사업");
+        l.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 36Dia 네번째 사업");
         l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(l);
 
@@ -1293,75 +1016,21 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent m = new Intent(AlarmClock.ACTION_SET_ALARM);
         m.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        m.putExtra(AlarmClock.EXTRA_MINUTES, 39);
+        m.putExtra(AlarmClock.EXTRA_MINUTES, 27);
         m.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        m.putExtra(AlarmClock.EXTRA_MESSAGE, "41Dia 다섯번째 사업");
+        m.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 36Dia 다섯번째 사업");
         m.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(m);
 
     }
 
-    private void set42dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 8);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 58);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "42Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 25);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "42Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 51);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "42Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 6);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "42Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
-    }
-
-    private void set43dia() {
+    private void set37dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
         i.putExtra(AlarmClock.EXTRA_HOUR, 9);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 1);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 54);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "43Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 37Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -1373,75 +1042,47 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
         j.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 38);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 9);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "43Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 37Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
     }
 
-    private void set44dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 9);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 25);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "44Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 25);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "44Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 1);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "44Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 56);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "44Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
-    }
-
-    private void set45dia() {
+    private void set38dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
         i.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 18);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 22);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "45Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 38Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 15);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 16);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 38Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+    }
+
+    private void set39dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 9);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 53);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 39Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -1455,113 +1096,19 @@ public class SundayActivity extends Activity implements OnClickListener {
         j.putExtra(AlarmClock.EXTRA_HOUR, 15);
         j.putExtra(AlarmClock.EXTRA_MINUTES, 59);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "45Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 39Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 18);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 12);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "45Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
     }
 
-    private void set46dia() {
+    private void set40dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
         i.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 25);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 50);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "46Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 21);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "46Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 36);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "46Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set47dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 32);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "47Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 6);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "47Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 18);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 21);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "47Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set48dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 10);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 46);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "48Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 40Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -1573,21 +1120,154 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
         j.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 58);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 21);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "48Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 40Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
     }
 
-    private void set49dia() {
+    private void set41dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 10);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 57);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 41Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 16);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 29);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 41Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+
+    }
+
+    private void set42dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
         i.putExtra(AlarmClock.EXTRA_HOUR, 11);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 21);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 11);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "49Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 42Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 16);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 35);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 42Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+    }
+
+    private void set43dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 11);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 18);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 43Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 16);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 42);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 43Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+    }
+
+    private void set44dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 11);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 30);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 44Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 50);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 44Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 15);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 46);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 44Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
+        l.putExtra(AlarmClock.EXTRA_HOUR, 16);
+        l.putExtra(AlarmClock.EXTRA_MINUTES, 45);
+        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        l.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 44Dia 네번째 사업");
+        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(l);
+
+    }
+
+    private void set45dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 11);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 32);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 45Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -1599,9 +1279,9 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
         j.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 8);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 12);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "49Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 45Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
@@ -1613,423 +1293,21 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
         k.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 8);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 49);
         k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "49Dia 세번째 사업");
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 45Dia 세번째 사업");
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 51);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "49Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
     }
 
-    private void set50dia() {
+    private void set46dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
         i.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 10);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 26);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "50Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 4);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "50Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 18);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 6);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "50Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set51dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 3);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "51Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 18);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "51Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 18);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 20);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "51Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set52dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 24);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "52Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 4);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "52Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 39);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "52Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 19);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 15);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "52Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
-    }
-
-    private void set53dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 13);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "53Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 43);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "53Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 19);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 21);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "53Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set54dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 20);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "54Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 3);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "54Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-    }
-
-    private void set55dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 12);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 59);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "55Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 25);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "55Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 26);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "55Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 18);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 56);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "55Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
-    }
-
-    private void set56dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 25);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "56Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 14);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "56Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 34);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "56Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 31);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "56Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent m = new Intent(AlarmClock.ACTION_SET_ALARM);
-        m.putExtra(AlarmClock.EXTRA_HOUR, 19);
-        m.putExtra(AlarmClock.EXTRA_MINUTES, 10);
-        m.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        m.putExtra(AlarmClock.EXTRA_MESSAGE, "56Dia 다섯번째 사업");
-        m.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(m);
-
-    }
-
-    private void set57dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 27);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "57Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 22);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "57Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 19);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 26);
-        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "57Dia 세번째 사업");
-        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(k);
-
-    }
-
-    private void set58dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 2);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "58Dia 첫번째 사업");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 26);
-        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "58Dia 두번째 사업");
-        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(j);
-
-    }
-
-    private void set59dia() {
-
-        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 0);
-        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "59Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 46Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -2041,9 +1319,9 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
         j.putExtra(AlarmClock.EXTRA_HOUR, 15);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 54);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 32);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "59Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 46Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
@@ -2055,35 +1333,21 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
         k.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 44);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 3);
         k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "59Dia 세번째 사업");
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 46Dia 세번째 사업");
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Intent l = new Intent(AlarmClock.ACTION_SET_ALARM);
-        l.putExtra(AlarmClock.EXTRA_HOUR, 19);
-        l.putExtra(AlarmClock.EXTRA_MINUTES, 19);
-        l.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        l.putExtra(AlarmClock.EXTRA_MESSAGE, "59Dia 네번째 사업");
-        l.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(l);
-
     }
 
-    private void set60dia() {
+    private void set47dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 9);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 11);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 53);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "60Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 47Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -2094,10 +1358,10 @@ public class SundayActivity extends Activity implements OnClickListener {
         }
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
-        j.putExtra(AlarmClock.EXTRA_HOUR, 17);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 33);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 15);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 53);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "60Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 47Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
@@ -2109,21 +1373,21 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
         k.putExtra(AlarmClock.EXTRA_HOUR, 19);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 32);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 9);
         k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "60Dia 세번째 사업");
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 47Dia 세번째 사업");
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
     }
 
-    private void set61dia() {
+    private void set48dia() {
 
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-        i.putExtra(AlarmClock.EXTRA_HOUR, 14);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 42);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 12);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 21);
         i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        i.putExtra(AlarmClock.EXTRA_MESSAGE, "61Dia 첫번째 사업");
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 48Dia 첫번째 사업");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
 
@@ -2135,9 +1399,61 @@ public class SundayActivity extends Activity implements OnClickListener {
 
         Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
         j.putExtra(AlarmClock.EXTRA_HOUR, 16);
-        j.putExtra(AlarmClock.EXTRA_MINUTES, 24);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 56);
         j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        j.putExtra(AlarmClock.EXTRA_MESSAGE, "61Dia 두번째 사업");
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 48Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+    }
+
+    private void set49dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 12);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 35);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 49Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 17);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 17);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 49Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+    }
+
+    private void set50dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 13);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 29);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 50Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 15);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 32);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 50Dia 두번째 사업");
         j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(j);
 
@@ -2148,10 +1464,130 @@ public class SundayActivity extends Activity implements OnClickListener {
         }
 
         Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
-        k.putExtra(AlarmClock.EXTRA_HOUR, 18);
-        k.putExtra(AlarmClock.EXTRA_MINUTES, 9);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 17);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 24);
         k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
-        k.putExtra(AlarmClock.EXTRA_MESSAGE, "61Dia 세번째 사업");
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 50Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+    }
+
+    private void set51dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 13);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 3);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 51Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 16);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 23);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 51Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 19);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 17);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 51Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+    }
+
+    private void set52dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 13);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 31);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 52Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 17);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 35);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 52Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 19);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 25);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 52Dia 세번째 사업");
+        k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(k);
+
+    }
+
+    private void set53dia() {
+
+        Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
+        i.putExtra(AlarmClock.EXTRA_HOUR, 14);
+        i.putExtra(AlarmClock.EXTRA_MINUTES, 27);
+        i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        i.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 53Dia 첫번째 사업");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent j = new Intent(AlarmClock.ACTION_SET_ALARM);
+        j.putExtra(AlarmClock.EXTRA_HOUR, 17);
+        j.putExtra(AlarmClock.EXTRA_MINUTES, 47);
+        j.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        j.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 53Dia 두번째 사업");
+        j.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(j);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Intent k = new Intent(AlarmClock.ACTION_SET_ALARM);
+        k.putExtra(AlarmClock.EXTRA_HOUR, 19);
+        k.putExtra(AlarmClock.EXTRA_MINUTES, 41);
+        k.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+        k.putExtra(AlarmClock.EXTRA_MESSAGE, "휴일 53Dia 세번째 사업");
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
