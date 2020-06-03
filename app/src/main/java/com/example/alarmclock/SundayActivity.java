@@ -166,6 +166,8 @@ public class SundayActivity extends Activity implements OnClickListener {
         btnSetAlarm59.setOnClickListener(this);
         btnSetAlarm60.setOnClickListener(this);
         btnSetAlarm61.setOnClickListener(this);
+        btnSetWeekday.setOnClickListener(this);
+        btnSetSaturday.setOnClickListener(this);
 
 
 
@@ -343,6 +345,14 @@ public class SundayActivity extends Activity implements OnClickListener {
 
             case R.id.Button_61:
                 set61dia();
+                break;
+
+            case R.id.btn_weekday:
+                setWeekday();
+                break;
+
+            case R.id.btn_saturday:
+                setSaturday();
                 break;
 
 
@@ -2145,6 +2155,16 @@ public class SundayActivity extends Activity implements OnClickListener {
         k.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(k);
 
+    }
+
+    private void setWeekday() {
+        Intent intentSat = new Intent(SundayActivity.this, MainActivity.class);
+        startActivity(intentSat);
+    }
+
+    private void setSaturday() {
+        Intent intentSat = new Intent(SundayActivity.this, SaturdayActivity.class);
+        startActivity(intentSat);
     }
 
 

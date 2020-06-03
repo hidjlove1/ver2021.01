@@ -396,6 +396,7 @@
                 android:layout_marginRight="2dp" />
 
             <Button
+                android:id="@+id/btn_weekday"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:text="평 일"

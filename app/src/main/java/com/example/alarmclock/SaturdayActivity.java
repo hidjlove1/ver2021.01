@@ -59,6 +59,8 @@ public class SaturdayActivity extends Activity implements OnClickListener {
     Button btnSetAlarm59;
     Button btnSetAlarm60;
     Button btnSetAlarm61;
+    Button btnSetWeekday;
+    Button btnSetSunday;
 
 
 
@@ -120,6 +122,8 @@ public class SaturdayActivity extends Activity implements OnClickListener {
         btnSetAlarm59 = (Button) findViewById(R.id.Button_59);
         btnSetAlarm60 = (Button) findViewById(R.id.Button_60);
         btnSetAlarm61 = (Button) findViewById(R.id.Button_61);
+        btnSetWeekday = (Button) findViewById(R.id.btn_weekday);
+        btnSetSunday = (Button) findViewById(R.id.btn_sunday);
 
 
 
@@ -164,6 +168,8 @@ public class SaturdayActivity extends Activity implements OnClickListener {
         btnSetAlarm59.setOnClickListener(this);
         btnSetAlarm60.setOnClickListener(this);
         btnSetAlarm61.setOnClickListener(this);
+        btnSetWeekday.setOnClickListener(this);
+        btnSetSunday.setOnClickListener(this);
 
 
 
@@ -341,6 +347,14 @@ public class SaturdayActivity extends Activity implements OnClickListener {
 
             case R.id.Button_61:
                 set61dia();
+                break;
+
+            case R.id.btn_weekday:
+                setWeekday();
+                break;
+
+            case R.id.btn_sunday:
+                setSunday();
                 break;
 
 
@@ -2145,5 +2159,14 @@ public class SaturdayActivity extends Activity implements OnClickListener {
 
     }
 
+    private void setWeekday() {
+        Intent intentSat = new Intent(SaturdayActivity.this, MainActivity.class);
+        startActivity(intentSat);
+    }
+
+    private void setSunday() {
+        Intent intentSat = new Intent(SaturdayActivity.this, SundayActivity.class);
+        startActivity(intentSat);
+    }
 
 }
